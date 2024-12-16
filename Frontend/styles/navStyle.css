@@ -1,0 +1,80 @@
+
+nav{
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    border: 1px solid lightgray;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span{
+    color: rgb(192,108,223);
+}
+
+.icon{
+    font-size: 25px;
+}
+
+.search__box{
+    background-color: aliceblue;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    width: 300px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+.reg_login{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.loginBtn{
+    background-color: rgb(192,108,223);
+    color: white;
+}
+.regBtn{
+    font-weight: 600;
+}
+
+.cartmain{
+    position: relative;
+}
+
+.cartCount{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(192,108,223);
+    font-size: 0.9rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+

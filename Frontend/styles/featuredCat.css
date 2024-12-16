@@ -1,0 +1,36 @@
+
+.featuredCatHeader{
+    margin-bottom: 2rem;
+}
+
+.featuredCatMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.featuredItem{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+}
+
+.featured_icon{
+    margin-bottom: 0.65rem;
+}
+
+.featured_icon svg{
+    background-color: white;
+    font-size: 5rem;
+    color: rgb(192,108,223);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.featured_bottom p{
+font-size: 0.85rem;
+margin-top: 0.3rem;
+}
