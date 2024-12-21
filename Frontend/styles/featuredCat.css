@@ -34,3 +34,17 @@
 font-size: 0.85rem;
 margin-top: 0.3rem;
 }
+
+
+/*===========  POPULAR CATEGORIES ========*/
+.specific__container{
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.specItem{
+    padding: 0.5rem 1rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 4px rgb(216, 216, 216);
+}

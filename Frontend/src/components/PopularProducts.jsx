@@ -1,50 +1,10 @@
-import { MdDevices } from "react-icons/md";
-import { FaShirt } from "react-icons/fa6";
-import { IoGameControllerOutline } from "react-icons/io5";
-import { FaTv } from "react-icons/fa6";
-import { SlNotebook } from "react-icons/sl";
-import { IoWatchOutline } from "react-icons/io5";
+
 import "../../styles/featuredCat.css"
+import { specCat } from "../../utlis/specCat";
+import { Link } from "react-router-dom";
+import { Popularcat } from "../../utlis/popularProductsData";
 
 
-const Popularcat = [
-    {
-        id: 1,
-        catTitle: "Devices",
-        icon: <MdDevices />,
-        num: "82k"
-    },
-    {
-        id: 2,
-        catTitle: "Fashions",
-        icon: <FaShirt />,
-        num: "90k"
-    },
-    {
-        id: 3,
-        catTitle: "Gaming",
-        icon: <IoGameControllerOutline />,
-        num: "64k"
-    },
-    {
-        id: 4,
-        catTitle: "Electronics",
-        icon: <FaTv />,
-        num: "165k"
-    },
-    {
-        id: 5,
-        catTitle: "E-books",
-        icon: <SlNotebook />,
-        num: "29k"
-    },
-    {
-        id: 6,
-        catTitle: "Accessories",
-        icon: <IoWatchOutline />,
-        num: "212k"
-    },
-]
 
 const PopularCategory = () => {
     return (
@@ -55,6 +15,12 @@ const PopularCategory = () => {
                     Start browsing now to discover the perfect
                     items that suits your needs and preferences.
                 </p>
+
+                <div className="specific__container">
+                    {
+                        specCat.map(item => <Link to="/" className="specItem" key={item.id}> <p>{item.title}</p></Link>)
+                    }
+                </div>
             </div>
 
 
